@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         white: {
-          100: '#F9F9F9',
+          100: '#f9fafb',
+          200: '#f1f1f1',
         },
       },
     },

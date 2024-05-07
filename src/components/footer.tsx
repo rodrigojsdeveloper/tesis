@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import logo from '@/src/assets/logo.svg'
 
-export const Header = () => {
+export const Footer = () => {
   return (
-    <header className="flex h-28 w-full items-center bg-white-100 px-4 py-4 sm:px-16">
+    <footer className="bg-white-200 flex h-48 w-full items-center justify-center p-4">
       <Image src={logo} alt="Logo da TESIS" width={153} height={76} />
-    </header>
+    </footer>
   )
 }
