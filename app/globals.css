@@ -27,6 +27,7 @@ body {
   min-height: -webkit-fill-available;
 }
 
-img, button {
+img,
+button {
   user-select: none;
 }
