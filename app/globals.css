@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  font-weight: 400;
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+img, button {
+  user-select: none;
+}
