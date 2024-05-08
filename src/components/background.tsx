@@ -1,8 +1,5 @@
+import { BackgroundProps } from '../interfaces'
 import { cn } from '../utils/cn'
-
-interface BackgroundProps {
-  className: string
-}
 
 export const Background = ({ className }: BackgroundProps) => {
   return (

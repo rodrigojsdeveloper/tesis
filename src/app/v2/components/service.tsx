@@ -1,12 +1,6 @@
-import { LucideIcon } from 'lucide-react'
+import { ServiceV2Props } from '@/src/interfaces'
 
-interface ServiceProps {
-  title: string
-  description: string
-  Icon: LucideIcon
-}
-
-export const Service = ({ title, description, Icon }: ServiceProps) => {
+export const Service = ({ title, description, Icon }: ServiceV2Props) => {
   return (
     <li className="flex min-h-48 w-full flex-col gap-2.5 rounded-xl bg-white-100 px-4 py-8">
       <div className="mx-auto w-fit rounded-full bg-blue-100 p-3">

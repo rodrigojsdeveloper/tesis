@@ -15,7 +15,7 @@ export default function NotFound() {
       </div>
       <Link
         href="/"
-        className="flex flex-row gap-2.5 text-lg hover:underline sm:hover:no-underline"
+        className="flex flex-row gap-2.5 text-center text-lg hover:underline sm:text-start sm:hover:no-underline"
       >
         <Arrow src={arrowLeft} alt="Seta para a esquerda" />
         Voltar para a página inicial

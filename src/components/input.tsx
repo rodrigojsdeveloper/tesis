@@ -1,13 +1,6 @@
 import React from 'react'
 import InputMask from 'react-input-mask'
-
-interface InputProps {
-  label: string
-  type: string
-  name: string
-  value: string
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-}
+import { InputProps } from '../interfaces'
 
 const InputMaskCorrect: React.FC<React.ComponentProps<typeof InputMask>> = (
   props,

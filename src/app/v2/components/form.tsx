@@ -3,9 +3,10 @@
 import { useState } from 'react'
 import { Input } from './input'
 import { toast } from 'sonner'
+import { FormProps } from '@/src/interfaces'
 
 export const Form = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormProps>({
     name: '',
     email: '',
     company: '',

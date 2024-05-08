@@ -14,7 +14,7 @@ export const Services = () => {
             key={index}
             title={objective.title}
             description={objective.description}
-            Icon={objective.icon}
+            Icon={objective.Icon}
           />
         ))}
       </ul>

@@ -1,10 +1,5 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
-
-interface ImageProps {
-  src: StaticImport
-  alt: string
-}
+import { ImageProps } from '../interfaces'
 
 export const Arrow = ({ src, alt }: ImageProps) => {
   return (

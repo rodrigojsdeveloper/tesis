@@ -1,9 +1,5 @@
+import { ServiceProps } from '../interfaces'
 import { Background } from './background'
-
-interface ServiceProps {
-  index: number
-  description: string
-}
 
 export const Service = ({ index, description }: ServiceProps) => {
   return (

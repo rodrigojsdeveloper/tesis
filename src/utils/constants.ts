@@ -1,12 +1,13 @@
 import { BookMarked, Compass, Search, Settings, Shield } from 'lucide-react'
+import { AddressProps, ServiceV2Props } from '../interfaces'
 
-export const TECH_SERVICES = [
+export const TECH_SERVICES: string[] = [
   'Gestão técnica de Programas Setoriais da Qualidade',
   'Avaliação de produtos inovadores para construção civil',
   'Realização de ensaios de materiais de construção',
 ]
 
-export const OBJECTIVES = [
+export const OBJECTIVES: string[] = [
   'Prover suporte para a avaliação de novos produtos e tecnologias',
   'Reduzir riscos na utilização de novos produtos e tecnologias',
   'Orientar o mercado na escolha de novos produtos e tecnologias',
@@ -14,7 +15,7 @@ export const OBJECTIVES = [
   'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
 ]
 
-export const ADDRESSES = [
+export const ADDRESSES: AddressProps[] = [
   {
     label: 'Telefone:',
     contact: '(11) 2137-9666',
@@ -25,33 +26,33 @@ export const ADDRESSES = [
   },
 ]
 
-export const OBJECTIVES_V2 = [
+export const OBJECTIVES_V2: ServiceV2Props[] = [
   {
     title: 'Suporte a Avaliação',
     description:
       'Prover suporte para a avaliação de novos produtos e tecnologias',
-    icon: Search,
+    Icon: Search,
   },
   {
     title: 'Redução de Riscos',
     description: 'Reduzir riscos na utilização de novos produtos e tecnologias',
-    icon: Shield,
+    Icon: Shield,
   },
   {
     title: 'Orientação de Mercado',
     description:
       'Orientar o mercado na escolha de novos produtos e tecnologias',
-    icon: Compass,
+    Icon: Compass,
   },
   {
     title: 'Inovação Tecnológica',
     description: 'Estimular o processo de inovação tecnológica',
-    icon: Settings,
+    Icon: Settings,
   },
   {
     title: 'Concessão Técnica',
     description:
       'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
-    icon: BookMarked,
+    Icon: BookMarked,
   },
 ]

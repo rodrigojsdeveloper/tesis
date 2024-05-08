@@ -2,9 +2,10 @@
 
 import { useState } from 'react'
 import { Input } from './input'
+import { FormProps } from '../interfaces'
 
 export const Form = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormProps>({
     name: '',
     email: '',
     company: '',
