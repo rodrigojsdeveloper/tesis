@@ -6,7 +6,7 @@ export const ConsultWidget = () => {
   return (
     <section
       id="specialist"
-      className="custom:mx-auto relative mx-4 mt-20 flex max-w-[82.5rem] items-center justify-center rounded-xl bg-[linear-gradient(231deg,_#273db3_40%,_#271c47_100%)] p-7"
+      className="relative mx-4 mt-20 flex max-w-[82.5rem] items-center justify-center rounded-xl bg-[linear-gradient(231deg,_#273db3_40%,_#271c47_100%)] p-7 custom:mx-auto"
     >
       <div className="z-10 flex w-full flex-col items-center justify-between gap-14 lg:flex-row">
         <article className="flex w-full flex-col gap-12 sm:gap-[4.375rem] lg:w-auto">

@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { Input } from './input'
 import { toast } from 'sonner'
 import { FormProps } from '@/src/interfaces'
+import arrowDown from '@/src/assets/arrow-down.svg'
+import Image from 'next/image'
 
 export const Form = () => {
   const [formData, setFormData] = useState<FormProps>({
@@ -37,42 +39,48 @@ export const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="flex h-full min-h-[30rem] w-full flex-col gap-8 overflow-hidden rounded-xl bg-white-200 px-5 pb-8 pt-6 sm:px-8 lg:max-w-lg"
+      className="flex h-full min-h-[30rem] w-full flex-col gap-6 overflow-hidden rounded-xl bg-white-200 px-5 pb-8 pt-6 sm:px-8 lg:max-w-lg"
     >
-      <h2 className="text-center text-xl font-semibold text-black">
-        Agendar um bate papo
-      </h2>
+      <section className="flex flex-col gap-4">
+        <h2 className="text-center text-xl font-semibold text-black">
+          Agendar um bate papo
+        </h2>
 
-      <div className="flex flex-col gap-8">
-        <Input
-          label="Nome"
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <Input
-          label="E-mail"
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <Input
-          label="Empresa"
-          type="text"
-          name="company"
-          value={formData.company}
-          onChange={handleChange}
-        />
-        <Input
-          label="Telefone"
-          type="tel"
-          name="cellphone"
-          value={formData.cellphone}
-          onChange={handleChange}
-        />
-      </div>
+        <figure className="mx-auto">
+          <Image src={arrowDown} alt="Seta para baixo" width={30} height={30} />
+        </figure>
+
+        <div className="flex flex-col gap-8">
+          <Input
+            label="Nome"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <Input
+            label="E-mail"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <Input
+            label="Empresa"
+            type="text"
+            name="company"
+            value={formData.company}
+            onChange={handleChange}
+          />
+          <Input
+            label="Telefone"
+            type="tel"
+            name="cellphone"
+            value={formData.cellphone}
+            onChange={handleChange}
+          />
+        </div>
+      </section>
 
       <button
         type="submit"
