@@ -17,6 +17,7 @@ const config: Config = {
         blue: {
           100: '#ecf4ff',
           200: '#273db3',
+          300: '#271c47',
         },
         yellow: {
           100: '#fcd34d',

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import InputMask from 'react-input-mask'
 import { cn } from '@/src/utils/cn'
 
@@ -34,6 +34,10 @@ export const Input = ({ label, type, name, value, onChange }: InputProps) => {
     setIsFocused(false)
   }
 
+  useEffect(() => {
+    setHasValue(Boolean(value))
+  }, [value])
+
   const inputField =
     type === 'tel' ? (
       <InputMaskCorrect
@@ -66,11 +70,11 @@ export const Input = ({ label, type, name, value, onChange }: InputProps) => {
     )
 
   return (
-    <div className="relative mb-2.5 h-16 w-full">
+    <div className="relative h-16 w-full">
       {inputField}
       <label
         className={cn(
-          'pointer-events-none absolute left-2.5 top-4 bg-white-100 px-2 transition-all ease-in-out',
+          'pointer-events-none absolute left-2.5 top-4 rounded-md bg-white-100 px-2 transition-all ease-in-out',
           isFocused || hasValue
             ? '-translate-x-2 -translate-y-7 scale-75 transform'
             : 'text-gray-500',
