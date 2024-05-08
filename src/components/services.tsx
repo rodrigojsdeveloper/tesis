@@ -15,8 +15,11 @@ export const Services = () => {
         ))}
       </ul>
 
-      <Link href="#specialist" className="absolute inset-x-0 -bottom-8 mx-4">
-        <div className="mx-auto flex min-h-16 w-full max-w-sm items-center justify-center rounded-xl bg-yellow-100 p-2">
+      <Link
+        href="#specialist"
+        className="absolute inset-x-0 -bottom-8 mx-auto w-full max-w-sm px-4 sm:px-0"
+      >
+        <div className="flex h-16 items-center justify-center rounded-xl bg-yellow-100 p-2">
           <p className="text-center text-xl font-bold text-blue-200">
             Fale com um especialista
           </p>

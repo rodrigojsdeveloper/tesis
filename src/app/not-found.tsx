@@ -14,7 +14,7 @@ export default function NotFound() {
       <Link href="/" className="flex flex-row items-center gap-2 text-lg">
         <Image
           src={arrowLeft}
-          alt="Seta para a direita"
+          alt="Seta para a esquerda"
           width={28}
           height={28}
         />

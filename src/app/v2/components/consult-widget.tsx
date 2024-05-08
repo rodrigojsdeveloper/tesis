@@ -5,7 +5,7 @@ export const ConsultWidget = () => {
   return (
     <section
       id="specialist"
-      className="relative flex min-h-[45rem] w-full items-center justify-center bg-[linear-gradient(231deg,_#3019b2_40%,_#271c47_100%)] px-4 py-10"
+      className="relative flex min-h-[45rem] w-full items-center justify-center bg-[linear-gradient(231deg,_#273db3_40%,_#271c47_100%)] px-4 py-10"
     >
       <div className="z-10 flex w-full max-w-[90rem] flex-col items-center justify-between gap-14 lg:flex-row">
         <article className="flex flex-col gap-12 sm:gap-20">
