@@ -9,17 +9,23 @@ interface InputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
+const InputMaskCorrect: React.FC<React.ComponentProps<typeof InputMask>> = (
+  props,
+) => {
+  return <InputMask {...props} />
+}
+
 export const Input = ({ label, type, name, value, onChange }: InputProps) => {
   const inputField =
     type === 'tel' ? (
-      <InputMask
+      <InputMaskCorrect
         mask="(99) 99999-9999"
         value={value}
         onChange={onChange}
         className="h-11 w-full max-w-[17rem] rounded-xl border border-solid border-gray-300 bg-slate-50 px-4 py-2"
       >
         <input type="tel" name={name} required />
-      </InputMask>
+      </InputMaskCorrect>
     ) : (
       <input
         required
