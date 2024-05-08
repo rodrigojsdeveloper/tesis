@@ -27,11 +27,6 @@ export interface ServiceProps {
   description: string
 }
 
-export interface AddressProps {
-  label: string
-  contact: string
-}
-
 export interface ImageProps {
   src: StaticImport
   alt: string

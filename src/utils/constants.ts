@@ -1,5 +1,5 @@
 import { BookMarked, Compass, Search, Settings, Shield } from 'lucide-react'
-import { AddressProps, ServiceV2Props } from '../interfaces'
+import { ServiceV2Props } from '../interfaces'
 
 export const TECH_SERVICES: string[] = [
   'Gestão técnica de Programas Setoriais da Qualidade',
@@ -15,15 +15,9 @@ export const OBJECTIVES: string[] = [
   'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
 ]
 
-export const ADDRESSES: AddressProps[] = [
-  {
-    label: 'Telefone:',
-    contact: '(11) 2137-9666',
-  },
-  {
-    label: 'Endereço:',
-    contact: 'Rua Guaipá, 486, Vila Leopoldina São Paulo, CEP 05089-000',
-  },
+export const ADDRESSES: string[] = [
+  'Telefone: (11) 2137-9666',
+  'Endereço: Rua Guaipá, 486, Vila Leopoldina São Paulo, CEP 05089-000',
 ]
 
 export const OBJECTIVES_V2: ServiceV2Props[] = [
@@ -55,4 +49,10 @@ export const OBJECTIVES_V2: ServiceV2Props[] = [
       'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
     Icon: BookMarked,
   },
+]
+
+export const NEXT_STEPS: string[] = [
+  'Agendamos uma call',
+  'Fazemos uma reunião de descoberta e consultoria',
+  'Preparamos uma proposta',
 ]

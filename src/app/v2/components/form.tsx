@@ -37,13 +37,13 @@ export const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="flex min-h-[30rem] w-full max-w-lg flex-col gap-8 overflow-hidden rounded-xl bg-white-200 px-8 pb-8 pt-6"
+      className="flex h-full min-h-[30rem] w-full flex-col gap-8 overflow-hidden rounded-xl bg-white-200 px-5 pb-8 pt-6 sm:px-8 lg:max-w-lg"
     >
       <h2 className="text-center text-xl font-semibold text-black">
         Agendar um bate papo
       </h2>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
         <Input
           label="Nome"
           type="text"

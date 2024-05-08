@@ -23,6 +23,9 @@ const config: Config = {
           100: '#fcd34d',
         },
       },
+      screens: {
+        custom: '85.625rem',
+      },
     },
   },
   plugins: [],
