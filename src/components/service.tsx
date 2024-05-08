@@ -1,3 +1,5 @@
+import { Background } from './background'
+
 interface ServiceProps {
   index: number
   description: string
@@ -10,7 +12,7 @@ export const Service = ({ index, description }: ServiceProps) => {
         <span className="z-10 text-5xl font-medium text-white-100">
           {index}
         </span>
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-5/6 bg-gradient-to-b from-black/50 to-transparent" />
+        <Background className="top-0 h-5/6 bg-gradient-to-b" />
       </div>
       <p className="text-center text-base font-normal text-black sm:text-lg">
         {description}
