@@ -21,8 +21,21 @@ export const Form = () => {
   const isFormComplete =
     formData.name && formData.email && formData.company && formData.cellphone
 
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      cellphone: '',
+    })
+  }
+
   return (
-    <form className="flex min-h-[30rem] w-full max-w-lg flex-col gap-10 rounded-xl bg-white-100 px-8 py-8 sm:px-12">
+    <form
+      onSubmit={onSubmit}
+      className="flex min-h-[30rem] w-full max-w-lg flex-col gap-10 rounded-xl bg-white-100 px-8 py-8 sm:px-12"
+    >
       <h2 className="w-full max-w-xs text-2xl font-bold text-blue-200">
         Informe seus dados para falar com um especialista:
       </h2>
