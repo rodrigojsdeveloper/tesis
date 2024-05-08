@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import arrowRight from '@/src/assets/arrow-right.svg'
 import { Form } from './form'
 import { Background } from './background'
 import { TECH_SERVICES } from '../utils/constants'
+import { Arrow } from './arrow'
 
 export const ConsultWidget = () => {
   return (
@@ -19,13 +19,7 @@ export const ConsultWidget = () => {
           <ul className="flex flex-col gap-2.5">
             {TECH_SERVICES.map((tech, index) => (
               <li key={index} className="flex flex-row items-center gap-1">
-                <Image
-                  src={arrowRight}
-                  alt="Seta para a direita"
-                  width={28}
-                  height={28}
-                  className="hidden sm:block"
-                />
+                <Arrow src={arrowRight} alt="Seta para a direita" />
                 <p className="text-lg font-medium text-white-100 sm:text-xl">
                   {tech}
                 </p>
