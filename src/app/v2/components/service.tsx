@@ -1,20 +1,23 @@
-import { Background } from './background'
+import { LucideIcon } from 'lucide-react'
 
 interface ServiceProps {
-  index: number
+  title: string
   description: string
+  Icon: LucideIcon
 }
 
-export const Service = ({ index, description }: ServiceProps) => {
+export const Service = ({ title, description, Icon }: ServiceProps) => {
   return (
-    <li className="flex min-h-24 w-full flex-col gap-3 rounded-xl bg-white-100 px-4 py-8 shadow-md">
-      <div className="relative mx-auto -mt-24 flex size-32 items-center justify-center overflow-hidden rounded-full bg-blue-200">
-        <span className="z-10 text-5xl font-medium text-white-100">
-          {index}
-        </span>
-        <Background className="top-0 h-5/6 bg-gradient-to-b" />
-      </div>
-      <p className="text-center text-base font-normal text-black sm:text-lg">
+    <li className="flex min-h-48 w-full flex-col gap-2.5 rounded-xl bg-white-100 px-4 py-8">
+      <span className="mx-auto w-fit rounded-full bg-blue-100 p-3">
+        <Icon size={25} color="#273db3" />
+      </span>
+
+      <h3 className="mx-auto w-fit rounded-3xl px-4 py-2 text-base font-normal text-blue-200">
+        {title}
+      </h3>
+
+      <p className="px-4 text-center text-base font-light text-black">
         {description}
       </p>
     </li>

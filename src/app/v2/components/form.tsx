@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Input } from './input'
+import { toast } from 'sonner'
 
 export const Form = () => {
   const [formData, setFormData] = useState({
@@ -21,13 +22,27 @@ export const Form = () => {
   const isFormComplete =
     formData.name && formData.email && formData.company && formData.cellphone
 
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      cellphone: '',
+    })
+    toast.success('E-mail enviado com sucesso!')
+  }
+
   return (
-    <form className="flex min-h-[30rem] w-full max-w-lg flex-col gap-10 overflow-hidden rounded-xl bg-white-200">
-      <h2 className="bg-gray-200 px-8 py-6 text-center text-2xl font-bold text-blue-200">
-        Informe seus dados para falar com um especialista
+    <form
+      onSubmit={onSubmit}
+      className="flex min-h-[30rem] w-full max-w-lg flex-col gap-10 overflow-hidden rounded-xl bg-white-200 px-8 py-6"
+    >
+      <h2 className="text-center text-xl font-semibold text-black">
+        Agendar um bate papo
       </h2>
 
-      <div className="flex flex-col gap-4 px-8">
+      <div className="flex flex-col gap-4">
         <Input
           label="Nome"
           type="text"
@@ -57,15 +72,14 @@ export const Form = () => {
           onChange={handleChange}
         />
       </div>
-      <div className="px-8 pb-8">
-        <button
-          type="submit"
-          disabled={!isFormComplete}
-          className="min-h-14 w-full rounded-xl bg-blue-200 p-2 text-lg font-bold uppercase text-white-100 duration-200 disabled:opacity-35"
-        >
-          fale com um especialista
-        </button>
-      </div>
+
+      <button
+        type="submit"
+        disabled={!isFormComplete}
+        className="min-h-14 w-full rounded-xl bg-blue-200 p-2 text-lg font-bold uppercase text-white-100 duration-200 disabled:opacity-35"
+      >
+        fale com um especialista
+      </button>
     </form>
   )
 }

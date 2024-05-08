@@ -13,12 +13,12 @@ export const ConsultWidget = () => {
       <div className="z-10 flex w-full max-w-[90rem] flex-col items-center justify-between gap-14 xl:flex-row">
         <article className="flex flex-col gap-12">
           <h1 className="w-full max-w-xl text-2xl font-bold text-white-100 sm:text-4xl">
-            Desenvolvimento e gestão de serviços tecnológicos!
+            Fale com nossos especialistas
           </h1>
 
           <ul className="flex flex-col gap-2.5">
             {TECH_SERVICES.map((tech, index) => (
-              <li key={index} className="flex flex-row items-center gap-1">
+              <li key={index} className="flex flex-row items-center gap-2.5">
                 <Image
                   src={arrowRight}
                   alt="Seta para a direita"

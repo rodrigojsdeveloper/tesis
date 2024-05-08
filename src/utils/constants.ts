@@ -1,3 +1,5 @@
+import { BookMarked, Compass, Search, Settings, Shield } from 'lucide-react'
+
 export const TECH_SERVICES = [
   'Gestão técnica de Programas Setoriais da Qualidade',
   'Avaliação de produtos inovadores para construção civil',
@@ -10,4 +12,35 @@ export const OBJECTIVES = [
   'Orientar o mercado na escolha de novos produtos e tecnologias',
   'Estimular o processo de inovação tecnológica',
   'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
+]
+
+export const OBJECTIVES_V2 = [
+  {
+    title: 'Suporte a Avaliação',
+    description:
+      'Prover suporte para a avaliação de novos produtos e tecnologias',
+    icon: Search,
+  },
+  {
+    title: 'Redução de Riscos',
+    description: 'Reduzir riscos na utilização de novos produtos e tecnologias',
+    icon: Shield,
+  },
+  {
+    title: 'Orientação de Mercado',
+    description:
+      'Orientar o mercado na escolha de novos produtos e tecnologias',
+    icon: Compass,
+  },
+  {
+    title: 'Inovação Tecnológica',
+    description: 'Estimular o processo de inovação tecnológica',
+    icon: Settings,
+  },
+  {
+    title: 'Concessão Técnica',
+    description:
+      'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
+    icon: BookMarked,
+  },
 ]
