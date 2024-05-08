@@ -37,10 +37,16 @@ npm run dev
 
 ### Acessando o TESIS no Vercel
 
-Você pode acessar o aplicativo ToDo no seguinte link:
+Você pode acessar o aplicativo TESIS no seguinte link:
 
 ```
 https://tesistpq.vercel.app
+```
+
+Para acessar a versão melhorada do TESIS:
+
+```
+https://tesistpq.vercel.app/v2
 ```
 
 <br/>
