@@ -12,7 +12,7 @@
 Yocê pode clonar este repositório usando o seguinte comando:
 
 ```
-https://github.com/rodrigojsdeveloper/tesis.git
+git clone https://github.com/rodrigojsdeveloper/tesis.git
 ```
 
 ## Gerenciador de Pacotes
