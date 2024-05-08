@@ -14,6 +14,17 @@ export const OBJECTIVES = [
   'Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica',
 ]
 
+export const ADDRESSES = [
+  {
+    label: 'Telefone:',
+    contact: '(11) 2137-9666',
+  },
+  {
+    label: 'Endereço:',
+    contact: 'Rua Guaipá, 486, Vila Leopoldina São Paulo, CEP 05089-000',
+  },
+]
+
 export const OBJECTIVES_V2 = [
   {
     title: 'Suporte a Avaliação',

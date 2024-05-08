@@ -1,34 +1,31 @@
-import Image from 'next/image'
-import arrowRight from '@/src/assets/arrow-right.svg'
 import { Form } from './form'
-import { Background } from './background'
-import { TECH_SERVICES } from '../../../utils/constants'
+import { ADDRESSES } from '../../../utils/constants'
 
 export const ConsultWidget = () => {
   return (
     <section
       id="specialist"
-      className="relative flex min-h-[45rem] w-full items-center justify-center bg-blue-200 px-4 py-10"
+      className="relative flex min-h-[45rem] w-full items-center justify-center bg-[linear-gradient(231deg,_#3019b2_40%,_#271c47_100%)] px-4 py-10"
     >
       <div className="z-10 flex w-full max-w-[90rem] flex-col items-center justify-between gap-14 xl:flex-row">
-        <article className="flex flex-col gap-12">
-          <h1 className="w-full max-w-xl text-2xl font-bold text-white-100 sm:text-4xl">
+        <article className="flex flex-col gap-20">
+          <span className="w-fit rounded-md bg-blue-950 px-3 py-2 text-xs font-medium uppercase text-white-100">
+            fale conosco
+          </span>
+
+          <h1 className="w-full max-w-md text-2xl font-bold text-white-100 sm:text-5xl">
             Fale com nossos especialistas
           </h1>
 
-          <ul className="flex flex-col gap-2.5">
-            {TECH_SERVICES.map((tech, index) => (
-              <li key={index} className="flex flex-row items-center gap-2.5">
-                <Image
-                  src={arrowRight}
-                  alt="Seta para a direita"
-                  width={28}
-                  height={28}
-                  className="hidden sm:block"
-                />
-                <p className="text-lg font-medium text-white-100 sm:text-xl">
-                  {tech}
+          <ul className="flex flex-col gap-4">
+            {ADDRESSES.map((address, index) => (
+              <li key={index} className="flex w-96 flex-row gap-2.5">
+                <p className="text-base font-medium leading-6 text-white-100">
+                  {address.label}
                 </p>
+                <address className="text-base font-medium leading-6 text-white-100">
+                  {address.contact}
+                </address>
               </li>
             ))}
           </ul>
@@ -36,7 +33,6 @@ export const ConsultWidget = () => {
 
         <Form />
       </div>
-      <Background className="bottom-0 h-5/6 bg-gradient-to-t" />
     </section>
   )
 }
