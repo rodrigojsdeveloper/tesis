@@ -7,7 +7,7 @@ import { TECH_SERVICES } from '../utils/constants'
 export const ConsultWidget = () => {
   return (
     <section
-      id="form"
+      id="specialist"
       className="relative flex min-h-[45rem] w-full items-center justify-center bg-blue-200 px-4 py-10"
     >
       <div className="z-10 flex w-full max-w-[90rem] flex-col items-center justify-between gap-14 xl:flex-row">

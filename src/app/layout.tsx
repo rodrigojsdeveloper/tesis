@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Header } from '../components/header'
 import { Footer } from '../components/footer'
+import { cn } from '../utils/cn'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={cn('flex flex-col justify-between', inter.className)}>
         <Header />
         {children}
         <Footer />
