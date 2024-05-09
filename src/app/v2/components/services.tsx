@@ -12,7 +12,7 @@ export const Services = () => {
         <p className="w-full max-w-[34.375rem] text-base font-normal text-black">
           Avaliações Técnicas de Produtos Inovadores, Orientam o processo de
           desenvolvimento de novos produtos (que não possuem normalização
-          prescritiva)
+          prescritiva).
         </p>
       </div>
 

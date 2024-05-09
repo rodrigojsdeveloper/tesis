@@ -18,7 +18,7 @@ export const Services = () => {
       <div className="absolute inset-x-0 -bottom-8 mx-auto w-full max-w-sm px-4 sm:px-0">
         <Link
           href="#specialist"
-          className="flex h-16 items-center justify-center rounded-xl bg-yellow-100 p-2 text-center text-xl font-bold text-blue-200"
+          className="flex h-16 items-center justify-center rounded-xl bg-yellow-100 p-2 text-center text-lg font-bold text-blue-200 sm:text-xl"
         >
           Fale com um especialista
         </Link>

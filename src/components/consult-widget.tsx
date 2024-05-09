@@ -20,7 +20,7 @@ export const ConsultWidget = () => {
             {TECH_SERVICES.map((tech, index) => (
               <li key={index} className="flex flex-row items-center gap-1">
                 <Arrow src={arrowRight} alt="Seta para a direita" />
-                <p className="text-lg font-medium text-white-100 sm:text-xl">
+                <p className="text-base font-medium text-white-100 sm:text-xl">
                   {tech}
                 </p>
               </li>

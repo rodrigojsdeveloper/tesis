@@ -15,7 +15,7 @@ export const Input = ({ label, type, name, value, onChange }: InputProps) => {
         mask="(99) 99999-9999"
         value={value}
         onChange={onChange}
-        className="h-11 w-full max-w-[17rem] rounded-xl border border-solid border-gray-300 bg-slate-50 px-4 py-2"
+        className="h-11 w-full rounded-xl border border-solid border-gray-300 bg-slate-50 px-4 py-2 sm:max-w-[17rem]"
       >
         <input type="tel" name={name} required />
       </InputMaskCorrect>
@@ -26,7 +26,7 @@ export const Input = ({ label, type, name, value, onChange }: InputProps) => {
         name={name}
         value={value}
         onChange={onChange}
-        className="h-11 w-full max-w-[17rem] rounded-xl border border-solid border-gray-300 bg-slate-50 px-4 py-2"
+        className="h-11 w-full rounded-xl border border-solid border-gray-300 bg-slate-50 px-4 py-2 sm:max-w-[17rem]"
       />
     )
 

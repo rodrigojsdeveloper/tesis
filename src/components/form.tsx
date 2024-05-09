@@ -35,9 +35,9 @@ export const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="flex min-h-[30rem] w-full max-w-lg flex-col gap-10 rounded-xl bg-white-100 px-8 py-8 sm:px-12"
+      className="flex min-h-[30rem] w-full flex-col gap-10 rounded-xl bg-white-100 px-8 py-8 sm:max-w-lg sm:px-12"
     >
-      <h2 className="w-full max-w-xs text-2xl font-bold text-blue-200">
+      <h2 className="w-full max-w-xs text-xl font-bold text-blue-200 sm:text-2xl">
         Informe seus dados para falar com um especialista:
       </h2>
 
@@ -75,7 +75,7 @@ export const Form = () => {
       <button
         type="submit"
         disabled={!isFormComplete}
-        className="min-h-14 w-full rounded-xl bg-blue-200 p-2 text-lg font-bold uppercase text-white-100 duration-200 disabled:opacity-35"
+        className="mx-auto min-h-14 w-fit rounded-xl bg-blue-200 px-6 py-2 text-base font-bold uppercase text-white-100 duration-200 disabled:opacity-35 sm:w-full sm:text-lg"
       >
         fale com um especialista
       </button>
