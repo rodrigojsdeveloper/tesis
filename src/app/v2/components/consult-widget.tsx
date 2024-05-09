@@ -25,7 +25,7 @@ export const ConsultWidget = () => {
                 className="flex w-full max-w-56 flex-col gap-1.5 sm:flex-row"
               >
                 <address className="text-sm font-normal leading-8 text-white-100">
-                  {address}
+                  <strong>{address.label}</strong> {address.contact}
                 </address>
               </li>
             ))}
