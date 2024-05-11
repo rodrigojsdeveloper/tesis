@@ -1,4 +1,4 @@
-import { ServiceV2Props } from '@/src/interfaces'
+import { ServiceV2Props } from '@/interfaces'
 
 export const Service = ({ title, description, Icon }: ServiceV2Props) => {
   return (

@@ -1,4 +1,4 @@
-import arrowRight from '@/src/assets/arrow-right.svg'
+import arrowRight from '@/assets/arrow-right.svg'
 import { Form } from './form'
 import { Background } from './background'
 import { TECH_SERVICES } from '../utils/constants'

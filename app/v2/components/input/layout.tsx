@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react'
-import { cn } from '@/src/utils/cn'
-import { InputLayoutV2Props } from '@/src/interfaces'
-import { ErrorSvg } from '@/src/components/error'
+import { cn } from '@/utils/cn'
+import { InputLayoutV2Props } from '@/interfaces'
+import { ErrorSvg } from '@/components/error'
 
 export const InputLayout = ({
   label,

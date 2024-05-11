@@ -4,12 +4,12 @@ import { useState } from 'react'
 import { Input } from './input'
 import { InputMask } from './input/mask'
 import { toast } from 'sonner'
-import { FormProps } from '@/src/interfaces'
-import arrowDown from '@/src/assets/arrow-down.svg'
+import { FormProps } from '@/interfaces'
+import arrowDown from '@/assets/arrow-down.svg'
 import Image from 'next/image'
 import { FieldValues, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { contactSchema } from '@/src/schemas/contact'
+import { contactSchema } from '@/schemas/contact'
 
 export const Form = () => {
   const [formData, setFormData] = useState<FormProps>({

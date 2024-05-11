@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import ReactInputMask from 'react-input-mask'
-import { cn } from '@/src/utils/cn'
-import { InputProps } from '@/src/interfaces'
+import { cn } from '@/utils/cn'
+import { InputProps } from '@/interfaces'
 import { InputLayout } from './layout'
 
-export const InputMask = ({
+export const Input = ({
   label,
   type,
   name,
@@ -40,17 +39,15 @@ export const InputMask = ({
       isFocused={isFocused}
       error={error}
     >
-      <ReactInputMask
+      <input
         {...register(name)}
         type={type}
         name={name}
-        mask="(99) 99999-9999"
         value={value}
         onChange={handleInputChange}
         onFocus={handleFocus}
         className={cn(
           'h-14 w-full rounded-md border border-solid px-3 transition-colors ease-in-out',
-          isFocused ? 'border-2 border-blue-500' : 'border border-gray-300',
           error ? 'border-red-100' : 'border-gray-300',
           error && isFocused ? 'border-2' : 'border ',
         )}

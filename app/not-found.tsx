@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import arrowLeft from '@/src/assets/arrow-left.svg'
+import arrowLeft from '@/assets/arrow-left.svg'
 import { Arrow } from '../components/arrow'
 
 export default function NotFound() {
