@@ -4,7 +4,7 @@ import { OBJECTIVES_V2 } from '../../../utils/constants'
 export const Services = () => {
   return (
     <section className="mb-28 mt-20 flex min-h-96 w-full flex-col gap-24 bg-blue-100 px-4 py-32">
-      <div className="mx-auto flex w-full max-w-[75rem] flex-col gap-6 lg:flex-row">
+      <div className="mx-auto flex w-full max-w-[75rem] flex-col gap-6 lg:flex-row lg:items-center">
         <h2 className="w-full max-w-[75rem] text-4xl font-bold text-blue-200 lg:ml-8">
           Somos especialistas em
         </h2>

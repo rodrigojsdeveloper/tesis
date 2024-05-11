@@ -8,7 +8,7 @@ export const ConsultWidget = () => {
       id="specialist"
       className="relative mx-4 mt-20 flex max-w-[82.5rem] items-center justify-center rounded-xl bg-[linear-gradient(231deg,_#273db3_40%,_#271c47_100%)] p-7 custom:mx-auto"
     >
-      <div className="z-10 flex w-full flex-col items-center justify-between gap-14 lg:flex-row">
+      <div className="z-10 flex w-full flex-col items-center justify-between gap-12 lg:flex-row">
         <article className="flex w-full flex-col gap-12 sm:gap-[4.375rem] lg:w-auto">
           <span className="w-fit rounded-md bg-blue-300 px-3 py-2 text-xs font-medium uppercase text-white-100">
             fale conosco

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useSyncExternalStore } from 'react'
 import Image from 'next/image'
 import { Input } from './input'
 import { InputMask } from './input/mask'
@@ -12,6 +12,12 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { contactSchema } from '@/schemas/contact'
 
 export const Form = () => {
+  const isRunningOnBrowser = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  )
+
   const [formData, setFormData] = useState<FormProps>({
     name: '',
     email: '',
@@ -103,6 +109,7 @@ export const Form = () => {
 
       <button
         type="submit"
+        disabled={!isRunningOnBrowser}
         className="mx-auto min-h-12 w-fit rounded-xl bg-blue-200 px-4 py-2 text-lg font-semibold text-white-100 duration-200 disabled:opacity-35"
       >
         Enviar
