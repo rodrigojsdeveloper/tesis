@@ -50,7 +50,7 @@ export const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="flex h-full min-h-[30rem] w-full flex-col gap-6 overflow-hidden rounded-xl bg-white-200 px-5 pb-8 pt-6 sm:px-8 lg:max-w-lg"
+      className="flex h-full min-h-[30rem] w-full flex-col gap-6 overflow-hidden rounded-xl bg-white-100 px-5 pb-8 pt-6 sm:px-8 lg:max-w-lg"
     >
       <section className="flex flex-col gap-4">
         <h2 className="text-center text-xl font-semibold text-black">
