@@ -22,6 +22,9 @@ const config: Config = {
         yellow: {
           100: '#fcd34d',
         },
+        red: {
+          100: '#b3261e',
+        },
       },
       screens: {
         custom: '85.625rem',

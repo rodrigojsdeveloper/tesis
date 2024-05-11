@@ -2,10 +2,14 @@
 
 import { useState } from 'react'
 import { Input } from './input'
+import { InputMask } from './input/mask'
 import { toast } from 'sonner'
 import { FormProps } from '@/src/interfaces'
 import arrowDown from '@/src/assets/arrow-down.svg'
 import Image from 'next/image'
+import { FieldValues, useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { contactSchema } from '@/src/schemas/contact'
 
 export const Form = () => {
   const [formData, setFormData] = useState<FormProps>({
@@ -25,16 +29,26 @@ export const Form = () => {
   const isFormComplete =
     formData.name && formData.email && formData.company && formData.cellphone
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(contactSchema),
+  })
+
+  const onSubmit = handleSubmit((data: FieldValues) => {
+    console.log(data)
     setFormData({
       name: '',
       email: '',
       company: '',
       cellphone: '',
     })
+    reset()
     toast.success('E-mail enviado com sucesso!')
-  }
+  })
 
   return (
     <form
@@ -57,6 +71,8 @@ export const Form = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            register={register}
+            error={errors?.name?.message as string | undefined}
           />
           <Input
             label="E-mail"
@@ -64,6 +80,8 @@ export const Form = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            register={register}
+            error={errors?.email?.message as string | undefined}
           />
           <Input
             label="Empresa"
@@ -71,13 +89,17 @@ export const Form = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
+            register={register}
+            error={errors?.company?.message as string | undefined}
           />
-          <Input
+          <InputMask
             label="Telefone"
             type="tel"
             name="cellphone"
             value={formData.cellphone}
             onChange={handleChange}
+            register={register}
+            error={errors?.cellphone?.message as string | undefined}
           />
         </div>
       </section>

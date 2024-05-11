@@ -1,5 +1,6 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import { LucideIcon } from 'lucide-react'
+import { FieldValues, UseFormRegister } from 'react-hook-form'
 
 export interface InputProps {
   label: string
@@ -7,6 +8,18 @@ export interface InputProps {
   name: string
   value: string
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  register: UseFormRegister<FieldValues>
+  error?: string
+}
+
+export interface InputLayoutProps {
+  label: string
+  error?: string
+}
+
+export interface InputLayoutV2Props extends InputLayoutProps {
+  isFocused: boolean
+  hasValue: boolean
 }
 
 export interface FormProps {
