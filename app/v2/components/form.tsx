@@ -26,9 +26,6 @@ export const Form = () => {
     })
   }
 
-  const isFormComplete =
-    formData.name && formData.email && formData.company && formData.cellphone
-
   const {
     register,
     handleSubmit,
@@ -106,7 +103,6 @@ export const Form = () => {
 
       <button
         type="submit"
-        disabled={!isFormComplete}
         className="mx-auto min-h-12 w-fit rounded-xl bg-blue-200 px-4 py-2 text-lg font-semibold text-white-100 duration-200 disabled:opacity-35"
       >
         Enviar

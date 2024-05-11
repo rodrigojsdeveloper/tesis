@@ -25,12 +25,26 @@ export const Input = ({
     setHasValue(Boolean(event.target.value))
   }
 
+  const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
+    event.stopPropagation()
+    setIsFocused(false)
+  }
+
   useEffect(() => {
+    setHasValue(Boolean(value))
+
     if (!value) {
       setHasValue(Boolean(value))
       setIsFocused(false)
     }
   }, [value])
+
+  const {
+    onChange: onRegisterChange,
+    onBlur: onRegisterBlur,
+    ref,
+    ...restRegisterProps
+  } = register(name)
 
   return (
     <InputLayout
@@ -40,11 +54,19 @@ export const Input = ({
       error={error}
     >
       <input
-        {...register(name)}
+        {...restRegisterProps}
+        ref={ref}
+        onChange={(e) => {
+          onRegisterChange(e)
+          handleInputChange(e)
+        }}
+        onBlur={(e) => {
+          onRegisterBlur(e)
+          handleBlur(e)
+        }}
         type={type}
         name={name}
         value={value}
-        onChange={handleInputChange}
         onFocus={handleFocus}
         className={cn(
           'h-14 w-full rounded-md border border-solid px-3 transition-colors ease-in-out',
