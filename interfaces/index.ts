@@ -1,5 +1,5 @@
-import { LucideIcon } from 'lucide-react'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { LucideIcon } from 'lucide-react'
 import { FieldValues, UseFormRegister } from 'react-hook-form'
 
 export interface InputProps {

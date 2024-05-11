@@ -11,7 +11,7 @@ export const InputLayout = ({
   error,
 }: PropsWithChildren<InputLayoutV2Props>) => {
   return (
-    <div className="relative flex w-full flex-col gap-2">
+    <div className="relative flex w-full flex-col gap-1.5">
       {children}
       <label
         className={cn(
