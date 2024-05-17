@@ -21,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={cn('flex flex-col justify-between', inter.className)}>
-        <Header />
-        {children}
+        <div>
+          <Header />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

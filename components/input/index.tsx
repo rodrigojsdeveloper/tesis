@@ -1,6 +1,6 @@
 import React from 'react'
 import { InputProps } from '../../interfaces'
-import { cn } from '../../utils/cn'
+import { cn } from '@utils/cn'
 import { InputLayout } from './layout'
 
 export const Input = ({

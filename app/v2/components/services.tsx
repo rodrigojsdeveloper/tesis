@@ -1,5 +1,5 @@
 import { Service } from './service'
-import { OBJECTIVES_V2 } from '../../../utils/constants'
+import { OBJECTIVES_V2 } from '@utils/constants'
 
 export const Services = () => {
   return (

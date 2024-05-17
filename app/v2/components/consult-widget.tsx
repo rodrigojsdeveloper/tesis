@@ -1,5 +1,5 @@
 import { Form } from './form'
-import { ADDRESSES, NEXT_STEPS } from '../../../utils/constants'
+import { ADDRESSES, NEXT_STEPS } from '@utils/constants'
 import { Arrow } from './arrow'
 
 export const ConsultWidget = () => {

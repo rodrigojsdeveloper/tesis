@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactInputMask from 'react-input-mask'
 import { InputProps } from '../../interfaces'
-import { cn } from '../../utils/cn'
+import { cn } from '@utils/cn'
 import { InputLayout } from './layout'
 
 export const InputMask = ({
