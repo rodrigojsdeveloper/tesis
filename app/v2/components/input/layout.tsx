@@ -9,11 +9,13 @@ export const InputLayout = ({
   hasValue,
   children,
   error,
+  name,
 }: PropsWithChildren<InputLayoutV2Props>) => {
   return (
     <div className="relative flex w-full flex-col gap-1.5">
       {children}
       <label
+        htmlFor={name}
         className={cn(
           'pointer-events-none absolute left-2.5 top-4 rounded-md bg-white-100 px-2 transition-all ease-in-out',
           isFocused || hasValue

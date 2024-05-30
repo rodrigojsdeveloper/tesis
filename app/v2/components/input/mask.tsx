@@ -53,9 +53,11 @@ export const InputMask = ({
       hasValue={hasValue}
       isFocused={isFocused}
       error={error}
+      name={name}
     >
       <ReactInputMask
         {...restRegisterProps}
+        id={name}
         ref={ref}
         onChange={(e) => {
           onRegisterChange(e)

@@ -110,7 +110,7 @@ export const Form = () => {
       <button
         type="submit"
         disabled={!isRunningOnBrowser}
-        className="mx-auto min-h-12 w-fit rounded-xl bg-blue-200 px-4 py-2 text-lg font-semibold text-white-100 duration-200 disabled:opacity-35"
+        className="mx-auto min-h-12 w-fit rounded-xl bg-blue-200 px-4 py-2 text-lg font-semibold text-white-100 duration-200 focus-visible:ring-1 focus-visible:ring-black disabled:opacity-35"
       >
         Enviar
       </button>

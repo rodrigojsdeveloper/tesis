@@ -6,10 +6,13 @@ export const InputLayout = ({
   label,
   error,
   children,
+  name,
 }: PropsWithChildren<InputLayoutProps>) => {
   return (
     <div className="flex flex-col justify-between gap-1.5 sm:flex-row sm:items-center">
-      <label className="text-lg font-medium text-blue-200">{label}:</label>
+      <label htmlFor={name} className="text-lg font-medium text-blue-200">
+        {label}:
+      </label>
       <div className="flex flex-col gap-1">
         {children}
 

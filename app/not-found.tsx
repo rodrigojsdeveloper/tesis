@@ -16,7 +16,10 @@ export default function NotFoundPage() {
           A rota que você está tentando acessar não existe.
         </p>
       </div>
-      <Link href="/" className="flex w-fit flex-row items-center gap-2">
+      <Link
+        href="/"
+        className="flex w-fit flex-row items-center gap-2 rounded-md p-0.5 focus-visible:ring-2 focus-visible:ring-black"
+      >
         <MoveLeft size={12} strokeWidth={2} />
         Voltar para a página inicial
       </Link>

@@ -15,6 +15,7 @@ export interface InputProps {
 export interface InputLayoutProps {
   label: string
   error?: string
+  name: string
 }
 
 export interface InputLayoutV2Props extends InputLayoutProps {

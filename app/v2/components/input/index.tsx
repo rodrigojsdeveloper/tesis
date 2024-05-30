@@ -52,9 +52,11 @@ export const Input = ({
       hasValue={hasValue}
       isFocused={isFocused}
       error={error}
+      name={name}
     >
       <input
         {...restRegisterProps}
+        id={name}
         ref={ref}
         onChange={(e) => {
           onRegisterChange(e)

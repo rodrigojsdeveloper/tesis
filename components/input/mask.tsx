@@ -20,9 +20,10 @@ export const InputMask = ({
   } = register(name)
 
   return (
-    <InputLayout label={label} error={error}>
+    <InputLayout name={name} label={label} error={error}>
       <ReactInputMask
         {...restRegisterProps}
+        id={name}
         ref={ref}
         onChange={(e) => {
           onRegisterChange(e)
